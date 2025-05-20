@@ -27,4 +27,19 @@ To simulate:
 2. Compile both files.
 3. Run the testbench and observe output in the console or waveform viewer.
 
-Expected output examples from the testbench:
+
+---
+
+## Notes
+
+- Designed for 4-bit signed inputs. It can be extended to support larger widths.
+- Follows a basic state machine with IDLE, RUN, and DONE states for control.
+- The product output is 8-bit signed to accommodate the full result range.
+
+---
+
+## About Booth’s Algorithm
+
+Booth’s algorithm is widely used in digital multipliers for signed integers. It reduces the number of arithmetic operations needed, particularly when the multiplier contains runs of 1’s, making it more efficient than basic shift-and-add methods.
+
+
