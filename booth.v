@@ -5,7 +5,7 @@ module booths_multiplier (
     input signed [3:0] multiplicand,
     input signed [3:0] multiplier,
     output reg signed [7:0] product,
-    output reg done
+    output reg done 
 );
 
     reg signed [4:0] A;      // 1 bit more for sign extension
